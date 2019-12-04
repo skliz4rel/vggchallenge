@@ -14,12 +14,15 @@ namespace Datastructure
 
         public static void Showmap()
         {
-            Dictionary<string, string> amap = new Dictionary<string, string>();
+          
+            string[] list = { "rice","beans","yam","semo" };
 
-            amap.Add("1","rice");
-            amap.Add("2","beans");
-            amap.Add("3","yam");
-            amap.Add("4","semo");
+            Dictionary<int, string> amap = new Dictionary<int, string>();
+
+            for (int k=0; k<list.Length; k++)
+            {
+                amap.Add(k, list[k]);
+            }
 
             foreach (var item in amap)
             {
